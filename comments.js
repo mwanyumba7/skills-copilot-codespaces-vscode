@@ -68,3 +68,13 @@ app.post('/events', async (req, res) => {
       type: 'CommentUpdated',
       data: {
         id,
+        status,
+        postId,
+        content,
+        },
+    });
+    } 
+
+    // Send response
+    res.send({});
+});
